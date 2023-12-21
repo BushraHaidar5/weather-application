@@ -7,28 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="weather-app">
     <header>
-        <form>
-            <input type="text" placeholder="Inter city..">
-            <input type="submit" value="Search">
+        <form class="weather-form">
+            <input type="text" placeholder="Inter city.." class="weather-search-form">
+            <input type="submit" value="Search" class="weather-search-button">
         </form>
     </header>
     <main> 
-    <div>
-        <h1>Kabul</h1>
-        <p>Monday 18:45, Scattered clouds
-            <br />
-          Humidity:31%, Wind: 7.3km/hr
-        </p>
-    </div> 
-    <div>
-        21°C
-    </div>
+      <div class="weather-data">
+           <div>
+             <h1 class="weather-city">Kabul</h1>
+              <p class="weather-details">Monday 18:45, Scattered clouds
+               <br />
+               Humidity: <strong>31%</strong>, Wind: <strong>7.3km/hr</strong>
+              </p>
+           </div> 
+           <div class="weather-temperature-data">
+              <div class="weather-icon">⛅</div>
+              <div class="weather-temperature">21</div>
+              <div class="weather-unit">°C</div>
+           </div>
+        </div>
     </main>
     <footer>
         This project was coded by <a href="https://github.com/BushraHaidar5" target="_blank">Bushra Haider</a>
         is <a href="https://github.com/BushraHaidar5/weather-application" target="_blank">open-sourced on GitHub</a> and 
         <a href="https://main--fluffy-otter-f83403.netlify.app/" target="_blank">hosted on Netlify</a>
     </footer>
+ </div>
 </body>
 </html>
