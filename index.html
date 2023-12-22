@@ -9,15 +9,15 @@
 <body>
     <div class="weather-app">
     <header>
-        <form class="weather-form">
-            <input type="text" placeholder="Inter city.." class="weather-search-form">
+        <form class="weather-form" id="weather-form">
+            <input type="text" placeholder="Inter city.." class="weather-search-form" id="weather-search-form">
             <input type="submit" value="Search" class="weather-search-button">
         </form>
     </header>
     <main> 
       <div class="weather-data">
            <div>
-             <h1 class="weather-city">Kabul</h1>
+             <h1 class="weather-city" id="weather-city">Kabul</h1>
               <p class="weather-details">Monday 18:45, Scattered clouds
                <br />
                Humidity: <strong>31%</strong>, Wind: <strong>7.3km/hr</strong>
@@ -36,5 +36,6 @@
         <a href="https://main--fluffy-otter-f83403.netlify.app/" target="_blank">hosted on Netlify</a>
     </footer>
  </div>
+ <script src="index.js"></script>
 </body>
 </html>
