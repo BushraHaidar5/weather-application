@@ -2,8 +2,16 @@ function searchWeather(response){
     let temperatureElement = document.querySelector("#temperature");
     let temperature = response.data.temperature.current;
     let cityElement = document.querySelector("#weather-city");
+    let descriptionElement = document.querySelector("#weather-description");
+    let humidityElement = document.querySelector("#weather-humidity");
+    let windElement = document.querySelector("#weather-wind-speed");
+
+
     cityElement.innerHTML = response.data.city;
     temperatureElement.innerHTML = Math.round(temperature);
+    descriptionElement.innerHTML = response.data.condition.description;
+    humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+    windElement.innerHTML = `${response.data.wind.speed}km/hr`
     }
 
     
