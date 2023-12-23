@@ -1,5 +1,6 @@
 body{
     background-color:#E8E5DF;
+     font-family: "Roboto", sans-serif;
 }
 .weather-app{
     background-color: white;
@@ -94,8 +95,10 @@ a{
     color: rgba(0, 0, 0, 0.7);
 }
 .weather-forecast-icon{
-    font-size: 45px;
-    margin-top: 14px;
+    width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 .weather-forecast-temperature{
     display: flex;
